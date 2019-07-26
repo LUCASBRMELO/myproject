@@ -1,0 +1,41 @@
+Script explanation and data modification
+Firstly the appropiate working directory is set. The script is written in a way such that the working directories assignments must be changed if running in another computer. 
+Everything else need not to be changed. The directories must contain the project databasis.
+
+The commands are divided into 5 sets, each set refers to its respectively step in the project guide.
+
+The first set of commands assign the csv.data to dataframes X_test and X_train after reading and merging them (individuals id and activities data by train or test).
+The following commands merge both dataframes.
+
+The second set of comands, selects the features that estimates means and standard deviations and their respectively columns in the dataframe called "data".
+
+The third and fourth commands are jointly written in the script, they refer to Step 3 and 4. Basically, they give appropriate labels to variables and name the last column "id"
+of the dataframe.
+
+Finally, set 5 construct the tidy data in only one command and then save it as a csv. file.
+
+The following list contains the variables description in the tidy.csv file.
+ [1]   "X"                      "id"                       "tbodyaccmeanx"            "tbodyaccmeany"           
+ [5] "tbodyaccmeanz"            "tbodyaccstdx"             "tbodyaccstdy"             "tbodyaccstdz"            
+ [9] "tgravityaccmeanx"         "tgravityaccmeany"         "tgravityaccmeanz"         "tgravityaccstdx"         
+[13] "tgravityaccstdy"          "tgravityaccstdz"          "tbodyaccjerkmeanx"        "tbodyaccjerkmeany"       
+[17] "tbodyaccjerkmeanz"        "tbodyaccjerkstdx"         "tbodyaccjerkstdy"         "tbodyaccjerkstdz"        
+[21] "tbodygyromeanx"           "tbodygyromeany"           "tbodygyromeanz"           "tbodygyrostdx"           
+[25] "tbodygyrostdy"            "tbodygyrostdz"            "tbodygyrojerkmeanx"       "tbodygyrojerkmeany"      
+[29] "tbodygyrojerkmeanz"       "tbodygyrojerkstdx"        "tbodygyrojerkstdy"        "tbodygyrojerkstdz"       
+[33] "tbodyaccmagmean"          "tbodyaccmagstd"           "tgravityaccmagmean"       "tgravityaccmagstd"       
+[37] "tbodyaccjerkmagmean"      "tbodyaccjerkmagstd"       "tbodygyromagmean"         "tbodygyromagstd"         
+[41] "tbodygyrojerkmagmean"     "tbodygyrojerkmagstd"      "fbodyaccmeanx"            "fbodyaccmeany"           
+[45] "fbodyaccmeanz"            "fbodyaccstdx"             "fbodyaccstdy"             "fbodyaccstdz"            
+[49] "fbodyaccmeanfreqx"        "fbodyaccmeanfreqy"        "fbodyaccmeanfreqz"        "fbodyaccjerkmeanx"       
+[53] "fbodyaccjerkmeany"        "fbodyaccjerkmeanz"        "fbodyaccjerkstdx"         "fbodyaccjerkstdy"        
+[57] "fbodyaccjerkstdz"         "fbodyaccjerkmeanfreqx"    "fbodyaccjerkmeanfreqy"    "fbodyaccjerkmeanfreqz"   
+[61] "fbodygyromeanx"           "fbodygyromeany"           "fbodygyromeanz"           "fbodygyrostdx"           
+[65] "fbodygyrostdy"            "fbodygyrostdz"            "fbodygyromeanfreqx"       "fbodygyromeanfreqy"      
+[69] "fbodygyromeanfreqz"       "fbodyaccmagmean"          "fbodyaccmagstd"           "fbodyaccmagmeanfreq"     
+[73] "fbodyaccjerkmagmean"      "fbodyaccjerkmagstd"       "fbodyaccjerkmagmeanfreq"  "fbodygyromagmean"        
+[77] "fbodygyromagstd"          "fbodygyromagmeanfreq"     "fbodygyrojerkmagmean"     "fbodygyrojerkmagstd"     
+[81] "fbodygyrojerkmagmeanfreq"	
+
+Where variables "X" and "id" refer to observation rows and individual id, respectively. The other variables are averages of activity mean when its name contains "means" and averages
+of standard deviations when the its name contains "std". The first characters contains the activity name.
