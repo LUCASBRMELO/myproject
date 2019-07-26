@@ -1,5 +1,4 @@
 
-In rowStep 1
 #Set the appropiate working directory which must contain the project data and assign them to dataframes X_test and X_train.
 
 setwd("C:/Users/lbrag/Desktop/R_Tutotials/data/dataset/train")
